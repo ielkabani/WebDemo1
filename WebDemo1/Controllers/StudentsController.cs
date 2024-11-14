@@ -28,7 +28,7 @@ namespace WebDemo1.Controllers
             var studentList = _context.Student.ToList();
             return Ok(studentList);
         }
-
+        //Get by Id
         [HttpGet("{id}")]
         public IActionResult GetStudent(int id)
         {
